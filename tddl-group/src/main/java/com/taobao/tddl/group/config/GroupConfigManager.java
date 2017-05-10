@@ -655,7 +655,7 @@ public class GroupConfigManager {
             this.configManager = configManager;
         }
 
-        public void onDataRecieved(String dataId, String data) {
+        public void onDataReceived(String dataId, String data) {
             try {
                 String oldData = this.configManager.tGroupDataSource.getDsKeyAndWeightCommaArray();
                 logger.warn("group ds data received !dataId:" + dataId + ", new data:" + data + ", old data:" + oldData);
@@ -669,7 +669,7 @@ public class GroupConfigManager {
     private class ExtraGroupConfigReceiver implements ConfigDataListener {
 
         @Override
-        public void onDataRecieved(String dataId, String data) {
+        public void onDataReceived(String dataId, String data) {
             logger.info("receive group extra data:" + data);
             parseExtraConfig(data);
         }
@@ -677,7 +677,7 @@ public class GroupConfigManager {
 
     // 仅用于测试
     public void receiveConfigInfo(String configInfo) {
-        configReceiver.onDataRecieved(null, configInfo);
+        configReceiver.onDataReceived(null, configInfo);
     }
 
     // 仅用于测试

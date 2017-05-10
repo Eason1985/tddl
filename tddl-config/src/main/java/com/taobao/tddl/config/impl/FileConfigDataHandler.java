@@ -77,7 +77,7 @@ public class FileConfigDataHandler extends AbstractLifecycle implements ConfigDa
                     if (!dataNew.toString().equalsIgnoreCase(data.get())) {// 配置变更啦
                         this.data.set(dataNew.toString());
                         for (ConfigDataListener cdl : configDataListeners) {
-                            cdl.onDataRecieved(dataId, data.get());
+                            cdl.onDataReceived(dataId, data.get());
                         }
                     }
                     try {

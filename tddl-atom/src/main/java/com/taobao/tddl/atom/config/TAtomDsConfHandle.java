@@ -195,7 +195,7 @@ public class TAtomDsConfHandle {
     private void registerPasswdConfListener(DbPasswdManager dbPasswdManager) {
         dbPasswdManager.registerPasswdConfListener(new ConfigDataListener() {
 
-            public void onDataRecieved(String dataId, String data) {
+            public void onDataReceived(String dataId, String data) {
                 logger.warn("[Passwd HandleData] dataId : " + dataId + " data: " + data);
                 if (null == data || TStringUtil.isBlank(data)) {
                     return;
@@ -247,7 +247,7 @@ public class TAtomDsConfHandle {
     private void registerGlobaDbConfListener(DbConfManager dbConfManager) {
         dbConfManager.registerGlobaDbConfListener(new ConfigDataListener() {
 
-            public void onDataRecieved(String dataId, String data) {
+            public void onDataReceived(String dataId, String data) {
                 logger.warn("[DRUID GlobaConf HandleData] dataId : " + dataId + " data: " + data);
                 if (null == data || TStringUtil.isBlank(data)) {
                     return;
@@ -381,7 +381,7 @@ public class TAtomDsConfHandle {
     private void registerAppDbConfListener(DbConfManager dbConfManager) {
         dbConfManager.registerAppDbConfListener(new ConfigDataListener() {
 
-            public void onDataRecieved(String dataId, String data) {
+            public void onDataReceived(String dataId, String data) {
                 logger.warn("[DRUID AppConf HandleData] dataId : " + dataId + " data: " + data);
                 if (null == data || TStringUtil.isBlank(data)) {
                     return;

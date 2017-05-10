@@ -368,7 +368,7 @@ public class TddlRuleConfig extends AbstractLifecycle implements Lifecycle {
 
     private class VersionsConfigListener implements ConfigDataListener {
 
-        public synchronized void onDataRecieved(String dataId, String data) {
+        public synchronized void onDataReceived(String dataId, String data) {
             if (TStringUtil.isNotEmpty(data)) {
                 String[] versions = data.split(",");
                 Map<String, String> checkMap = new HashMap<String, String>();
@@ -434,7 +434,7 @@ public class TddlRuleConfig extends AbstractLifecycle implements Lifecycle {
 
     private class SingleRuleConfigListener implements ConfigDataListener {
 
-        public synchronized void onDataRecieved(String dataId, String data) {
+        public synchronized void onDataReceived(String dataId, String data) {
             if (TStringUtil.isNotEmpty(data)) {
                 logReceiveRule(dataId, data);
                 String prefix = TDDL_RULE_LE_PREFIX + appName + ".";

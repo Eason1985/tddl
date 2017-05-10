@@ -223,7 +223,7 @@ public class TopologyHandler extends AbstractLifecycle {
         }
 
         @Override
-        public void onDataRecieved(String dataId, String data) {
+        public void onDataReceived(String dataId, String data) {
             // do nothing
         }
 

@@ -132,7 +132,7 @@ public class StaticSchemaManager extends AbstractLifecycle implements SchemaMana
         }
 
         @Override
-        public void onDataRecieved(String dataId, String data) {
+        public void onDataReceived(String dataId, String data) {
             if (data == null || data.isEmpty()) {
                 logger.warn("schema is null, dataId is " + dataId);
                 return;

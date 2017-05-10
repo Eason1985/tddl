@@ -17,5 +17,5 @@ public interface ConfigDataListener {
      * @param dataId 数据在配置中心注册的id
      * @param data 字符串数据
      */
-    void onDataRecieved(String dataId, String data);
+    void onDataReceived(String dataId, String data);
 }

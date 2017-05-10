@@ -77,7 +77,7 @@
 		<module>tddl-atom</module>
 		<module>tddl-group</module>
 		<module>tddl-repo-mysql</module>
-		<module>tddl-repo-oceanbase</module>
+		<!--<module>tddl-repo-oceanbase</module>-->
 		<module>tddl-optimizer</module>
 		<module>tddl-executor</module>
 		<module>tddl-matrix</module>
@@ -120,7 +120,7 @@
 			<dependency>
 				<groupId>com.taobao.diamond</groupId>
 				<artifactId>diamond-client</artifactId>
-				<version>3.6.8</version>
+				<version>2.0.5.4.taocode-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.alibaba</groupId>
